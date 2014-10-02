@@ -60,7 +60,7 @@
 {% for hp, sitebase_barcodes in viewitems(human_participants) %}
                             <li class="has-sub">
                                 <a onclick="document.forms['participant_overview_{{hp}}'].submit(); return false;">
-                                    <form action="/participants/{{hp}}" method="post" id="participant_overview_{{hp}}">
+                                    <form action="participants/{{hp}}" method="post" id="participant_overview_{{hp}}">
                                         <input type="hidden" name="participant_type" value="human"/>
                                         <span>{{hp}}</span>
                                     </form>
